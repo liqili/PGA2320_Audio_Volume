@@ -2272,7 +2272,7 @@
     (property "Value" "SDO_TO_OTHER_PGA2311" (at 182.88 125.73 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Connector_Pin:Pin_D0.7mm_L6.5mm_W1.8mm_FlatFork" (at 180.34 125.73 0)
+    (property "Footprint" "Connector_Pin:Pin_D0.9mm_L10.0mm_W2.4mm_FlatFork" (at 180.34 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 180.34 125.73 0)
