@@ -391,7 +391,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -493,6 +493,10 @@
     [
       "3c367401-208f-4628-9cce-4b3b1ae65d20",
       ""
+    ],
+    [
+      "da47919b-7b3c-40e2-9d9c-5e15e3d50087",
+      "MCU_ATMEGA32U4"
     ]
   ],
   "text_variables": {}

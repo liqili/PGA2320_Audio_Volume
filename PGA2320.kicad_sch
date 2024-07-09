@@ -3875,6 +3875,23 @@
     )
   )
 
+  (sheet (at 71.12 101.6) (size 45.72 21.59) (fields_autoplaced)
+    (stroke (width 0.1524) (type solid))
+    (fill (color 0 0 0 0.0000))
+    (uuid da47919b-7b3c-40e2-9d9c-5e15e3d50087)
+    (property "Sheetname" "MCU_ATMEGA32U4" (at 71.12 100.8884 0)
+      (effects (font (size 1.27 1.27)) (justify left bottom))
+    )
+    (property "Sheetfile" "ATMEGA32U4.kicad_sch" (at 71.12 123.7746 0)
+      (effects (font (size 1.27 1.27)) (justify left top))
+    )
+    (instances
+      (project "PGA2320"
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20" (page "2"))
+      )
+    )
+  )
+
   (sheet_instances
     (path "/" (page "1"))
   )
