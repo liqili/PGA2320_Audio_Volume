@@ -544,6 +544,58 @@
         )
       )
     )
+    (symbol "power:+5VD" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+5VD" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+5VD\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+5VD_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+5VD_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+5VD" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -763,6 +815,14 @@
   (wire (pts (xy 52.07 147.32) (xy 62.23 147.32))
     (stroke (width 0) (type default))
     (uuid c134fff3-0e4d-421d-b140-adf3c5a931c8)
+  )
+  (wire (pts (xy 124.46 97.79) (xy 124.46 102.87))
+    (stroke (width 0) (type default))
+    (uuid c79d8faa-bd26-470f-a468-45c7810e5e96)
+  )
+  (wire (pts (xy 81.28 74.93) (xy 81.28 78.74))
+    (stroke (width 0) (type default))
+    (uuid caefe480-e4e8-41ab-a16d-32c143b49874)
   )
   (wire (pts (xy 67.31 111.76) (xy 71.12 111.76))
     (stroke (width 0) (type default))
@@ -1001,36 +1061,6 @@
     )
   )
 
-  (symbol (lib_id "power:+5V") (at 46.99 143.51 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 0006480a-5142-4a03-a1db-e7fa8cd678fe)
-    (property "Reference" "#PWR04" (at 46.99 147.32 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 47.371 139.1158 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 46.99 143.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 46.99 143.51 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid cec64cc1-9e41-4686-9e56-5309ee5f461f))
-    (instances
-      (project "PGA2320"
-        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20/da47919b-7b3c-40e2-9d9c-5e15e3d50087"
-          (reference "#PWR04") (unit 1)
-        )
-      )
-      (project "Wyvern HS PCB"
-        (path "/bdd6f26e-a579-4b76-9cd4-7af86ec9f4f6"
-          (reference "#PWR0109") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:GND") (at 124.46 110.49 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0941350a-0e0e-43f9-8e38-5faa63b83c80)
@@ -1117,6 +1147,34 @@
       (project "Wyvern HS PCB"
         (path "/bdd6f26e-a579-4b76-9cd4-7af86ec9f4f6"
           (reference "#PWR0106") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5VD") (at 46.99 143.51 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 21073a40-abf6-47d0-8bc3-cf0847567868)
+    (property "Reference" "#PWR016" (at 46.99 147.32 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5VD" (at 46.99 138.43 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 46.99 143.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 46.99 143.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 8bd46bd6-74b9-4d19-9d0d-2eb35c8ac797))
+    (instances
+      (project "PGA2320"
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20"
+          (reference "#PWR016") (unit 1)
+        )
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20/da47919b-7b3c-40e2-9d9c-5e15e3d50087"
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -1275,6 +1333,34 @@
     )
   )
 
+  (symbol (lib_id "power:+5VD") (at 81.28 74.93 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 3b5d26a0-3c44-4c4a-b6a0-e98f3f72ff23)
+    (property "Reference" "#PWR016" (at 81.28 78.74 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5VD" (at 81.28 69.85 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 81.28 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 81.28 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5d9aa760-c5d0-4e91-a5b8-30bf8dbaf501))
+    (instances
+      (project "PGA2320"
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20"
+          (reference "#PWR016") (unit 1)
+        )
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20/da47919b-7b3c-40e2-9d9c-5e15e3d50087"
+          (reference "#PWR017") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 120.65 139.7 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4aa17d2f-9af6-494d-8c11-5ad3af964d59)
@@ -1300,36 +1386,6 @@
       (project "Wyvern HS PCB"
         (path "/bdd6f26e-a579-4b76-9cd4-7af86ec9f4f6"
           (reference "#PWR0108") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 81.28 78.74 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 4f50961f-b0c1-4fb1-852c-c6204dfabbbe)
-    (property "Reference" "#PWR010" (at 81.28 82.55 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 81.661 74.3458 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 81.28 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 81.28 78.74 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 22924428-ffcd-48b6-a61a-e5069aa209e1))
-    (instances
-      (project "PGA2320"
-        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20/da47919b-7b3c-40e2-9d9c-5e15e3d50087"
-          (reference "#PWR010") (unit 1)
-        )
-      )
-      (project "Wyvern HS PCB"
-        (path "/bdd6f26e-a579-4b76-9cd4-7af86ec9f4f6"
-          (reference "#PWR0101") (unit 1)
         )
       )
     )
@@ -1582,6 +1638,62 @@
     )
   )
 
+  (symbol (lib_id "power:+5VD") (at 124.46 97.79 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid acc7c7ef-1b45-4144-956b-403a0d9378ac)
+    (property "Reference" "#PWR016" (at 124.46 101.6 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5VD" (at 124.46 92.71 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 124.46 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 124.46 97.79 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0848b003-b296-49ce-b259-2decfcbde87f))
+    (instances
+      (project "PGA2320"
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20"
+          (reference "#PWR016") (unit 1)
+        )
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20/da47919b-7b3c-40e2-9d9c-5e15e3d50087"
+          (reference "#PWR09") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+5VD") (at 69.85 71.12 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid b9ddbfcf-ab71-4f98-bc2b-9ca66d357700)
+    (property "Reference" "#PWR016" (at 69.85 74.93 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+5VD" (at 69.85 66.04 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 69.85 71.12 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 69.85 71.12 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 073c0c4b-db43-4e34-a485-61b7835584a7))
+    (instances
+      (project "PGA2320"
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20"
+          (reference "#PWR016") (unit 1)
+        )
+        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20/da47919b-7b3c-40e2-9d9c-5e15e3d50087"
+          (reference "#PWR019") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 40.64 93.98 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c33ebb55-5898-4c51-b72d-d17f9d0e02f5)
@@ -1733,66 +1845,6 @@
       (project "Wyvern HS PCB"
         (path "/bdd6f26e-a579-4b76-9cd4-7af86ec9f4f6"
           (reference "#PWR0104") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 69.85 71.12 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid ca9af4cc-f64f-48f9-b346-22e218d90794)
-    (property "Reference" "#PWR09" (at 69.85 74.93 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 70.231 66.7258 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 69.85 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 69.85 71.12 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 9c19616c-a79e-4d90-a426-23140e704f91))
-    (instances
-      (project "PGA2320"
-        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20/da47919b-7b3c-40e2-9d9c-5e15e3d50087"
-          (reference "#PWR09") (unit 1)
-        )
-      )
-      (project "Wyvern HS PCB"
-        (path "/bdd6f26e-a579-4b76-9cd4-7af86ec9f4f6"
-          (reference "#PWR0107") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 124.46 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid d043ec55-2356-489a-a67d-2048282abedb)
-    (property "Reference" "#PWR013" (at 124.46 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 124.841 98.4758 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 124.46 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 124.46 102.87 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d0fb2b75-0c5d-4121-8665-452058f13e72))
-    (instances
-      (project "PGA2320"
-        (path "/3c367401-208f-4628-9cce-4b3b1ae65d20/da47919b-7b3c-40e2-9d9c-5e15e3d50087"
-          (reference "#PWR013") (unit 1)
-        )
-      )
-      (project "Wyvern HS PCB"
-        (path "/bdd6f26e-a579-4b76-9cd4-7af86ec9f4f6"
-          (reference "#PWR0111") (unit 1)
         )
       )
     )
